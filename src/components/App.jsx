@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/Home';
 import { About } from '../pages/About';
 import { Products } from '../pages/Products';
-import { NotFound } from '../pages/NotFound';
+// import { NotFound } from '../pages/NotFound';
 import { ProductDetails } from '../pages/ProductDetails';
 import { Container, Header, Logo, StyledLink } from './App.styled';
 
@@ -39,7 +39,7 @@ export const App = () => {
         </Route>
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Container>
   );
