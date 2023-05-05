@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Container, Header, Logo, StyledLink } from './App.styled';
+import { Container, Header, Logo, Link } from '../components/App.styled';
 
 export const SharedLayout = () => {
   return (
@@ -12,9 +12,11 @@ export const SharedLayout = () => {
           GoMerch Store
         </Logo>
         <nav>
-          <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="/about">About</StyledLink>
-          <StyledLink to="/products">Products</StyledLink>
+          <Link to="/" end>
+            Home
+          </Link>
+          <Link to="/about">About</Link>
+          <Link to="/products">Products</Link>
         </nav>
       </Header>
       <Outlet />

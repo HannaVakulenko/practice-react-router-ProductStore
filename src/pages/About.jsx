@@ -3,18 +3,6 @@ export const About = () => {
   return (
     <main>
       <h1>About Us</h1>
-      <ul>
-        <li>
-          <Link to="mission">Read about our mission</Link>
-        </li>
-        <li>
-          <Link to="team">Get to know the team</Link>
-        </li>
-        <li>
-          <Link to="reviews">Go through the reviews</Link>
-        </li>
-      </ul>
-      <Outlet />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
         laborum amet ab cumque sit nihil dolore modi error repudiandae
@@ -28,6 +16,18 @@ export const About = () => {
         dolorum illum voluptatum dolores! Quas perferendis quis alias excepturi
         eaque voluptatibus eveniet error, nulla rem iusto?
       </p>
+      <ul>
+        <li>
+          <Link to="mission">Read about our mission</Link>
+        </li>
+        <li>
+          <Link to="team">Get to know the team</Link>
+        </li>
+        <li>
+          <Link to="reviews">Go through the reviews</Link>
+        </li>
+      </ul>
+      <Outlet />
     </main>
   );
 };
